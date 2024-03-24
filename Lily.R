@@ -41,8 +41,8 @@ Genus_colors <- setNames(brewer.pal(length(levels(Winterswijk_Complete$Genus)), 
 
 plot(Winterswijk_Complete$Sr.Ca,Winterswijk_Complete$Ba.Ca,
      xlab="Sr/Ca", ylab="Ba/Ca",
-     col=Genus_colors[Winterswijk_Complete$Genus],
-     pch=c(16, 17, 21, 22, 23)[Winterswijk_Complete$Genus],
+     col = "black",
+     pch=c(24, 25, 21, 22, 23)[Winterswijk_Complete$Genus],
      bg=Genus_colors[Winterswijk_Complete$Genus])
 
 text(Winterswijk_Complete$Sr.Ca,
@@ -53,9 +53,9 @@ text(Winterswijk_Complete$Sr.Ca,
 
 legend(x="topright",
        title = "Genera",
-       legend=c("Birgeria","Colobodus","Gyrolepis","Nothosaurus","Saurichthys"),
-       col=Genus_colors,
-       pch=c(16, 17, 21, 22, 23),
+       legend=levels(Winterswijk_Complete$Genus),
+       col = "black",
+       pch=c(24, 25, 21, 22, 23),
        pt.bg = Genus_colors,
        cex=0.7,
        pt.cex = 0.8)
@@ -73,8 +73,8 @@ Layer_colors <- setNames(brewer.pal(length(levels(Winterswijk_Complete$Layer)), 
 
 plot(Winterswijk_Complete$Sr.Ca,Winterswijk_Complete$Ba.Ca,
      xlab="Sr/Ca", ylab="Ba/Ca",
-     col=Layer_colors[Winterswijk_Complete$Layer],
-     pch=c(16, 17, 21, 22)[Winterswijk_Complete$Layer],
+     col = "black",
+     pch=c(24, 25, 21, 22)[Winterswijk_Complete$Layer],
      bg=Layer_colors[Winterswijk_Complete$Layer])
 
 text(Winterswijk_Complete$Sr.Ca,
@@ -85,9 +85,9 @@ text(Winterswijk_Complete$Sr.Ca,
 
 legend(x="topleft",
        title = "Layer",
-       legend=c("Layer 4","Layer 14","Layer 36","Layer 46"), 
-       col=Layer_colors,
-       pch=c(16, 17, 21, 22),
+       legend=levels(Winterswijk_Complete$Layer), 
+       col = "black",
+       pch=c(24, 25, 21, 22),
        pt.bg = Layer_colors,
        cex=0.7,
        pt.cex = 0.8)
@@ -104,8 +104,8 @@ Winterswijk_Complete$Specimen <- droplevels(Winterswijk_Complete$Specimen)
 plot(Winterswijk_Complete$Sr.Ca,Winterswijk_Complete$Ba.Ca,
      xlab="Sr/Ca", 
      ylab="Ba/Ca",
-     col=Genus_colors[Winterswijk_Complete$Genus],
-     pch=c(16, 17, 21, 22, 23)[Winterswijk_Complete$Genus],
+     col = "black",
+     pch=c(24, 25, 21, 22, 23)[Winterswijk_Complete$Genus],
      bg=Genus_colors[Winterswijk_Complete$Genus])
 
 text(Winterswijk_Complete$Sr.Ca,
@@ -116,9 +116,9 @@ text(Winterswijk_Complete$Sr.Ca,
 
 legend(x="topright",
        title = "Genera",
-       legend=c("Birgeria","Colobodus","Gyrolepis","Nothosaurus","Saurichthys"),
-       col=Genus_colors,
-       pch=c(16, 17, 21, 22, 23),
+       legend=levels(Winterswijk_Complete$Genus),
+       col = "black",
+       pch=c(24, 25, 21, 22, 23),
        pt.bg = Genus_colors,
        cex=0.7,
        pt.cex = 0.8)
@@ -139,8 +139,8 @@ plot(Winterswijk_Complete$Sr.Ca,Winterswijk_Complete$Ba.Ca,
      xlab="Sr/Ca", 
      ylab="Ba/Ca",
      ylim = c(0, 0.0007),
-     col=Genus_colors[Winterswijk_Complete$Genus],
-     pch=c(16, 17, 21, 22, 23)[Winterswijk_Complete$Genus],
+     col = "black",
+     pch=c(24, 25, 21, 22, 23)[Winterswijk_Complete$Genus],
      bg=Genus_colors[Winterswijk_Complete$Genus])
 
 text(Winterswijk_Complete$Sr.Ca,
@@ -151,13 +151,13 @@ text(Winterswijk_Complete$Sr.Ca,
 
 legend(x="topright",
        title = "Genera",
-       legend=c("Birgeria","Colobodus","Gyrolepis","Nothosaurus","Saurichthys"),
-       col=Genus_colors,
-       pch=c(16, 17, 21, 22, 23),
+       legend=levels(Winterswijk_Complete$Genus),
+       col = "black",
+       pch=c(24, 25, 21, 22, 23),
        pt.bg = Genus_colors,
        cex=0.7,
        pt.cex = 0.8)
-title("Samples by genus",
+title("Samples by genus, without Birgeria",
       font.main=4, 
       adj=1, 
       cex.main=1)
